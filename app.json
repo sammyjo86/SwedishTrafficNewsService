@@ -1,0 +1,34 @@
+{
+  "id": "se.faboul.SwedishTrafficNews",
+  "version": "1.0.1",
+  "compatibility": ">=1.5.0",
+  "sdk": 2,
+  "name": {
+    "en": "SR Traffic news (Sweden)"
+  },
+  "description": {
+    "en": "Getting the latest traffic news from Swedish radio"
+  },
+  "category": ["internet"],
+  "permissions": ["homey:manager:media"],
+  "images": {"large": "/assets/images/large.png","small": "/assets/images/small.png"},
+  "author": {"name": "Sammy Johannesson","email": "sammy.johannesson@gmail.com"},
+  "developer": {"name": "Sammy Johannesson","email": "sammy.johannesson@gmail.com"},
+  "flow": {
+    "actions": [
+      {
+          "id": "get_News",
+          "title": {
+              "en": "Update tag with latest announcement"
+          }
+      },
+      {
+        "id": "PlayLatestTrafficAnnouncement",
+        "title": {
+            "en": "Play latest traffic announcement"
+        }
+        
+    }
+    ]
+  }
+}
